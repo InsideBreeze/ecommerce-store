@@ -72,8 +72,8 @@ const Gallery: React.FC<GalleryProps> = ({
                     })}>
                         {
                             images.map((image) => (
-                                <Tabs.Trigger value={image.id} asChild>
-                                    <div key={image.id}
+                                <Tabs.Trigger value={image.id} asChild key={image.id}>
+                                    <div
                                         className={css({
                                             aspectRatio: "square",
                                             h: "full",
